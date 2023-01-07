@@ -78,4 +78,22 @@ public class Pizza extends BahanPizza implements Modal  {
         double hitung = this.esBatu() / this.rotiTiapDough() * pesanan;
         return hitung;
     }
+       
+    @Override
+    public double hitungSosis() {
+        double hitung = this.sosis() / this.rotiTiapDough() * pesanan;
+        return hitung;
+    }
+       
+    @Override
+    public double hitungBeef() {
+        double hitung = this.beef() / this.rotiTiapDough() * pesanan;
+        return hitung;
+    }
+       
+    @Override
+    public double hitungBawang() {
+        double hitung = this.bawang() / this.rotiTiapDough() * pesanan;
+        return hitung;
+    }
 }
