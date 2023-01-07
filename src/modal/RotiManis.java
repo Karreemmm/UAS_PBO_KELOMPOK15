@@ -77,4 +77,34 @@ public class RotiManis extends BahanRotiManis implements Modal {
         double hitung = this.esBatu() / this.rotiTiapDough() * pesanan;
         return hitung;
     }
+    
+    @Override
+    public double hitungCoklat() {
+        double hitung = this.coklat() / this.rotiTiapDough() * pesanan;
+        return hitung;
+    }
+    
+    @Override
+    public double hitungKeju() {
+        double hitung = this.keju() / this.rotiTiapDough() * pesanan;
+        return hitung;
+    }
+    
+    @Override
+    public double hitungSelai() {
+        double hitung = this.selai() / this.rotiTiapDough() * pesanan;
+        return hitung;
+    }
+    
+    @Override
+    public double hitungKrim() {
+        double hitung = this.krim() / this.rotiTiapDough() * pesanan;
+        return hitung;
+    }
+    
+    @Override
+    public double hitungSosis() {
+        double hitung = this.sosis() / this.rotiTiapDough() * pesanan;
+        return hitung;
+    }
 }
