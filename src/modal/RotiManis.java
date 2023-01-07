@@ -12,7 +12,7 @@ public class RotiManis extends BahanRotiManis implements Modal {
 //  HITUNG MODAL ROTI MANIS
     @Override
     public double hitungModal(){
-        double modal = this.tepungTerigu() * this.hargaTepung() + this.gulaPasir() * this.hargaGulaPasir() + this.butter() * this.hargaButter() + this.esBatu() * this.hargaEsBatu() + this.ragi() * this.hargaRagi() + (this.susuBubuk() * this.hargaSusuBubuk()) + (this.susuCair() * this.hargaSusuCair()) + (this.telur() * this.hargaTelur());
+        double modal = (this.tepungTerigu() * this.hargaTepung()) + (this.gulaPasir() * this.hargaGulaPasir()) + (this.butter() * this.hargaButter()) + (this.esBatu() * this.hargaEsBatu()) + (this.ragi() * this.hargaRagi()) + (this.susuBubuk() * this.hargaSusuBubuk()) + (this.susuCair() * this.hargaSusuCair()) + (this.telur() * this.hargaTelur()) + (this.coklat() * this.hargaCoklat()) + (this.keju() * this.hargaKeju()) + (this.selai() * this.hargaSelai()) + (this.krim() * this.hargaKrim()) + (this.sosis() * this.hargaSosis());
         return modal;
     }
      
