@@ -21,7 +21,7 @@ public class RotiManisVar3 extends RotiManis implements Interface {
     @Override
     public double filling() {
         double keju = this.hargaKeju() * 10;
-        double sosis  = this.hargaCoklat() * 10;
+        double sosis  = this.hargaSosis() * 10;
         double harga = keju + sosis;
         return harga;
     }
