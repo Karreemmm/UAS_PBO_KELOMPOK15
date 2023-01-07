@@ -24,7 +24,7 @@ public class JualRoti {
             // TODO code application logic here
             char pilih, varian;
             double kebutuhanTepung, kebutuhanGula, kebutuhanButter, kebutuhanRagi, kebutuhanSusuBubuk,
-                            kebutuhanSusuCair, kebutuhanTelur, kebutuhanEs;
+                            kebutuhanSusuCair, kebutuhanTelur, kebutuhanEs, kebutuhanCoklat, kebutuhanSelai, kebutuhanKrim, kebutuhanKeju, kebutuhanBawang, kebutuhanSosis, kebutuhanBeef;
             Decimal brt;
             Scanner input = new Scanner(System.in);
             
@@ -67,6 +67,8 @@ public class JualRoti {
                                             kebutuhanSusuCair = rm1.hitungSusuCair();
                                             kebutuhanTelur = rm1.hitungTelur();
                                             kebutuhanEs = rm1.hitungEs();
+                                            kebutuhanKeju = rm1.hitungKeju();
+                                            kebutuhanCoklat = rm1.hitungCoklat();
 
                                             // TAMPILKAN BEBAN DALAM KILOGRAM ATAU GRAM
 
@@ -90,6 +92,12 @@ public class JualRoti {
                                             brt.berat(kebutuhanTelur);
                                             System.out.print("Es Batu       = ");
                                             brt.berat(kebutuhanEs);
+                                            System.out.println("Filling Keju = ");
+                                            brt.berat(kebutuhanKeju);
+                                            System.out.println("Filling Coklat = ");
+                                            brt.berat(kebutuhanCoklat);
+                                            System.out.println("Topping Coklat = ");
+                                            brt.berat(kebutuhanCoklat);
                                             System.out.println("----");
 
                                             // HARGA TIAP VARIAN PRODUK
@@ -117,6 +125,8 @@ public class JualRoti {
                                             kebutuhanSusuCair = rm2.hitungSusuCair();
                                             kebutuhanTelur = rm2.hitungTelur();
                                             kebutuhanEs = rm2.hitungEs();
+                                            kebutuhanSelai = rm2.hitungSelai();
+                                            kebutuhanKrim = rm2.hitungKrim();
 
                                             // TAMPILKAN BEBAN DALAM KILOGRAM ATAU GRAM
 
@@ -140,6 +150,10 @@ public class JualRoti {
                                             brt.berat(kebutuhanTelur);
                                             System.out.print("Es Batu       = ");
                                             brt.berat(kebutuhanEs);
+                                            System.out.println("Filling Selai = ");
+                                            brt.berat(kebutuhanSelai);
+                                            System.out.println("Topping Krim = ");
+                                            brt.berat(kebutuhanKrim);
                                             System.out.println("----");
 
                                             // HARGA TIAP VARIAN PRODUK
@@ -167,6 +181,8 @@ public class JualRoti {
                                             kebutuhanSusuCair = rm3.hitungSusuCair();
                                             kebutuhanTelur = rm3.hitungTelur();
                                             kebutuhanEs = rm3.hitungEs();
+                                            kebutuhanKeju = rm3.hitungKeju2();
+                                            kebutuhanSosis = rm3.hitungSosis();
 
                                             // TAMPILKAN BEBAN DALAM KILOGRAM ATAU GRAM
 
@@ -190,6 +206,10 @@ public class JualRoti {
                                             brt.berat(kebutuhanTelur);
                                             System.out.print("Es Batu       = ");
                                             brt.berat(kebutuhanEs);
+                                            System.out.println("Filling Keju = ");
+                                            brt.berat(kebutuhanKeju);
+                                            System.out.println("Filling Sosis = ");
+                                            brt.berat(kebutuhanSosis);
                                             System.out.println("----");
 
                                             // HARGA TIAP VARIAN PRODUK
@@ -231,6 +251,7 @@ public class JualRoti {
                                             kebutuhanSusuCair = rt1.hitungSusuCair();
                                             kebutuhanTelur = rt1.hitungTelur();
                                             kebutuhanEs = rt1.hitungEs();
+                                            kebutuhanCoklat = rt1.hitungCoklat();
 
                                             // TAMPILKAN BEBAN DALAM KILOGRAM ATAU GRAM
 
@@ -254,6 +275,8 @@ public class JualRoti {
                                             brt.berat(kebutuhanTelur);
                                             System.out.print("Es Batu       = ");
                                             brt.berat(kebutuhanEs);
+                                            System.out.println("Filling Coklat = ");
+                                            brt.berat(kebutuhanCoklat);
                                             System.out.println("----");
 
                                             // HARGA TIAP VARIAN PRODUK
@@ -281,6 +304,7 @@ public class JualRoti {
                                             kebutuhanSusuCair = rt2.hitungSusuCair();
                                             kebutuhanTelur = rt2.hitungTelur();
                                             kebutuhanEs = rt2.hitungEs();
+                                            kebutuhanKeju = rt2.hitungKeju();
 
                                             // TAMPILKAN BEBAN DALAM KILOGRAM ATAU GRAM
 
@@ -303,6 +327,10 @@ public class JualRoti {
                                             System.out.print("Telur         = ");
                                             brt.berat(kebutuhanTelur);
                                             System.out.print("Es Batu       = ");
+                                            System.out.println("Filling Keju = ");
+                                            brt.berat(kebutuhanKeju);
+                                          
+                                            
 
                                             brt.berat(kebutuhanEs);
                                             System.out.println("----");
@@ -338,6 +366,10 @@ public class JualRoti {
                             kebutuhanSusuCair = p1.hitungSusuCair();
                             kebutuhanTelur = p1.hitungTelur();
                             kebutuhanEs = p1.hitungEs();
+                            kebutuhanKeju = p1.hitungKeju();
+                            kebutuhanBeef = p1.hitungBeef();
+                            kebutuhanSosis = p1.hitungSosis();
+                            kebutuhanBawang = p1.hitungBawang();
 
                             // TAMPILKAN BEBAN DALAM KILOGRAM ATAU GRAM
 
@@ -361,6 +393,14 @@ public class JualRoti {
                             brt.berat(kebutuhanTelur);
                             System.out.print("Es Batu       = ");
                             brt.berat(kebutuhanEs);
+                            System.out.print("Keju          = ");
+                            brt.berat(kebutuhanKeju);
+                            System.out.print("Beef          = ");
+                            brt.berat(kebutuhanBeef);
+                            System.out.print("Sosis         = ");
+                            brt.berat(kebutuhanSosis);
+                            System.out.print("Bawang         = ");
+                            brt.berat(kebutuhanBawang);
                             System.out.println("----");
 
                             // HARGA TIAP VARIAN PRODUK
