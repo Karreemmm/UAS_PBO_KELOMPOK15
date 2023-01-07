@@ -19,5 +19,13 @@ public interface Modal {
     public double hitungSusuCair();
     public double hitungTelur();
     public double hitungEs();
+    public double hitungCoklat();
+    public double hitungKeju();
+    public double hitungSelai();
+    public double hitungKrim();
+    public double hitungSosis();
+    public double hitungBeef();
+    public double hitungBawang();
     public double hitungModal();
+    
 }
