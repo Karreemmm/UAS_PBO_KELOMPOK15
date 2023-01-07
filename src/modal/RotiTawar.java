@@ -9,6 +9,12 @@ import dough.BahanRotiTawar;
  * @author lenovo
  */
 public class RotiTawar extends BahanRotiTawar implements Modal {
+    
+    public double hitungModal() {
+        double modal = (this.tepungTerigu() * this.hargaTepung()) + (this.gulaPasir() * this.hargaGulaPasir()) + (this.butter() * this.hargaButter()) + (this.esBatu() * this.hargaEsBatu()) + (this.ragi() * this.hargaRagi()) + (this.susuBubuk() * this.hargaSusuBubuk()) + (this.susuCair() * this.hargaSusuCair()) + (this.telur() * this.hargaTelur()) + (this.coklat() * this.hargaCoklat()) + (this.keju() * this.hargaKeju());
+        return modal;
+    }
+    
     @Override
     public int beratDough() {
         return 400;
@@ -60,9 +66,14 @@ public class RotiTawar extends BahanRotiTawar implements Modal {
         double hitung = this.esBatu() / this.rotiTiapDough() * pesanan;
         return hitung;
     }
-
-    public double hitungModal() {
-        double modal = this.tepungTerigu() * this.hargaTepung() + this.gulaPasir() * this.hargaGulaPasir() + this.butter() * this.hargaButter() + this.esBatu() * this.hargaEsBatu() + this.ragi() * this.hargaRagi() + (this.susuBubuk() * this.hargaSusuBubuk()) + (this.susuCair() * this.hargaSusuCair()) + (this.telur() * this.hargaTelur());
-        return modal;
+    
+    public double hitungCoklat() {
+        double hitung = this.coklat() / this.rotiTiapDough() * pesanan;
+        return hitung;
+    }
+    
+    public double hitungKeju() {
+        double hitung = this.keju() / this.rotiTiapDough() * pesanan;
+        return hitung;
     }
 }
